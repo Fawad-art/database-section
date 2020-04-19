@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('db', 'PostsController@dbCheck');
 Route::get('dbdb', 'PostsController@index');
+Route::get('list', 'PostsController@list');

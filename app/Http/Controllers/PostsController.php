@@ -24,4 +24,8 @@ class PostsController extends Controller
     public function index(){
         return Post::all();
     }
+    public function list(){
+        $data=DB::table('posts')->paginate(2);
+        return view('lists', ['data' => $data]);
+    }
 }
